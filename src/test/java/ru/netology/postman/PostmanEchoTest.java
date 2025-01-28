@@ -8,7 +8,7 @@ import static org.hamcrest.Matchers.*;
 public class PostmanEchoTest {
 
     @Test
-    public void postmanEchoTest(){
+    public void postmanEchoTest() {
         // Given - When - Then
 // Предусловия
         given()
@@ -20,7 +20,7 @@ public class PostmanEchoTest {
 // Проверки
                 .then()
                 .statusCode(200)
-                .body("data", equalTo ("some value"));
+                .body("data", equalTo("some data"));
         ;
     }
 }
